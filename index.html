@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang cá nhân | Lê Phong Phú</title>
+    <style>
+        /* CSS Settings */
+        :root {
+            --primary-color: #0056b3;
+            --bg-color: #f4f7f6;
+            --text-color: #333;
+            --card-bg: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* Container */
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        /* Sections */
+        section {
+            background-color: var(--card-bg);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+        }
+
+        section h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            display: inline-block;
+        }
+
+        /* Hobbies List */
+        ul {
+            list-style-type: none;
+        }
+
+        ul li {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        ul li::before {
+            content: "▹";
+            color: var(--primary-color);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        /* Contact Section */
+        .contact-info p {
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-info a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #333;
+            color: white;
+            margin-top: 2rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            section {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Lê Phong Phú</h1>
+        <p>Sinh viên Khoa KH&KTTT (ISE) - Đại học Công nghệ Thông tin (UIT)</p>
+    </header>
+
+    <div class="container">
+        <!-- Phần Giới thiệu -->
+        <section id="about">
+            <h2>Giới thiệu bản thân</h2>
+            <p>Xin chào! Mình là sinh viên tại Trường Đại học Công nghệ Thông tin (UIT), ĐHQG-HCM, trực thuộc Khoa Khoa học và Kỹ thuật Thông tin (ISE). Mình là người đam mê công nghệ, đặc biệt đang tập trung tìm hiểu về mảng Web Development (Front-end), phân tích thiết kế phần mềm và hệ quản trị cơ sở dữ liệu.</p>
+        </section>
+
+        <!-- Phần Sở thích -->
+        <section id="hobbies">
+            <h2>Sở thích & Hoạt động</h2>
+            <ul>
+                <li><strong>Hoạt động tình nguyện:</strong> Rất nhiệt huyết với các hoạt động cộng đồng, đặc biệt là tham gia tổ chức và điều phối các chiến dịch ý nghĩa như "Xuân Tình Nguyện - Vị Xuân".</li>
+                <li><strong>Sáng tạo nội dung:</strong> Yêu thích công việc editor, thiết kế đồ họa và quản lý nội dung trên các nền tảng mạng xã hội như TikTok.</li>
+                <li><strong>Phát triển kỹ năng:</strong> Thích làm việc nhóm trong các đồ án thực tế (như MongoDB) và liên tục trau dồi kiến thức về kiến trúc hệ thống.</li>
+            </ul>
+        </section>
+
+        <!-- Phần Liên hệ -->
+        <section id="contact">
+            <h2>Thông tin liên hệ</h2>
+            <div class="contact-info">
+                <p><strong>Email:</strong> <a href="mailto:lephongphu24521355@example.com">lephongphu24521355@example.com</a></p>
+                <p><strong>Điện thoại:</strong> 0123 456 789</p>
+                <p><strong>Mạng xã hội:</strong> <a href="#" target="_blank">Facebook cá nhân</a> | <a href="#" target="_blank">LinkedIn</a></p>
+                <p><strong>Địa chỉ:</strong> Khu đô thị ĐHQG-HCM, TP. Thủ Đức, TP. Hồ Chí Minh</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Lê Phong Phú. Được thiết kế dành riêng cho bạn.</p>
+    </footer>
+
+</body>
+</html>
